@@ -1,0 +1,192 @@
+header{
+    height:50px;
+    width:1366px;
+    position:relative;
+    top:0px;
+    background-color:steelblue;
+    z-index: -2;
+}
+#heading{
+    color:white;
+    position:absolute;
+    top:10px;
+    left:70px;
+    bottom:10px;
+    font-size: 30px;
+    
+}
+#heading2{
+    position:relative;
+    top:10px;
+    z-index: -1;
+    color:white;
+    width:1350px;
+    font-size:20px;
+    text-align:right;
+}
+body{
+    background-color: whitesmoke;
+    font-family: Arial;
+}
+/* menu css code */
+
+*{
+    padding:0px;
+    margin:0px;
+}
+a{
+    text-decoration: none;
+    
+}
+li {list-style:none;}
+.main-nav{
+    width:250px;
+    background-color:ghostwhite;
+    height:580px;
+}
+
+.main-nav ul ul {background-color:Honeydew;}
+
+.main-nav a{
+    display:block;
+    padding:10px 0px 10px 20px; 
+    color:black;
+    
+}
+
+.main-nav a:hover
+{
+    background-color: PowderBlue
+}
+
+.main-nav ul ul{display:none;}
+.main-nav ul li:hover ul{
+    display:block;
+}
+
+.main-nav .sub-arrow:after
+{
+
+    content: '\203A';
+    float:right;
+    margin-right:20px;
+    -webkit-transform:rotate(90deg)
+}
+
+.main-nav    .subsublist:before{
+    content:'\f00a';
+    float:left;
+    vertical-align: text-bottom;
+    margin-left:10px;
+}
+
+.main-nav li:hover .sub-arrow:after{
+    -webkit-transform:rotate(-90deg);
+}
+table{
+    border-collapse: collapse;
+}
+span{
+    float: right;
+}
+.box {
+    position: relative;
+    top: 100px;
+    left: 250px;
+    width: 990px;
+    border:2px solid steelblue;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+table select{
+    width: 90%;
+    height: 30px;
+}
+.box td,th{
+    height: 40px;
+    border:none;
+}
+.box table{
+    width: 100%;
+}
+.box tr:first-child{
+    background-color: steelblue;
+    color:white;
+    padding: 0px;
+}
+.box input[type=button]{
+    width: 60%;
+    height: 30px;
+    background-color: steelblue;
+    color: white;
+    border:none;
+    border-radius: 5px;
+}
+form input[type=submit]{
+    width: 80%;
+}
+.content,.tab1 th{
+    background-color: grey;
+    color:white;
+}
+.content,.tab1 th,td{
+    border: 1px solid #ddd;
+    color: black;
+}
+.content tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.content,.tab1 tr:hover {background-color: #ddd;}
+.tab1{
+    position: relative;
+    top: 150px;
+    left: 250px;
+    width: 990px;
+    border:2px solid #ddd;
+    background-color: white;   
+}
+.tab1 tr:last-child{
+    text-align: center; 
+}
+.tab1 td,th{
+font-size: 15px;}
+.tab1 th{
+    color: white;
+}
+.timetable{
+    position: relative;
+    top: 250px;
+    left: 250px;
+    width: 990px;
+    background-color: white; 
+    border:2px solid steelblue;  
+} 
+.timetable table{
+    width: 100%;
+    text-align: center;
+}
+.timetable td{
+    border:0.5px solid steelblue;
+}
+.timetable td:nth-child(1){
+    background-color: #aaaaee;
+}
+.timetable tr:nth-child(odd) td:nth-child(2),.timetable tr:nth-child(odd) td:nth-child(9),.timetable tr:nth-child(even) td:nth-child(8){
+    background-color: #aaaaee;
+}
+.timetable tr:nth-child(odd){
+    background-color: #FAFAD2;
+}
+.timetable tr:nth-child(even){
+    background-color: #F0E68C;
+}
+.timetable tr:nth-child(1),.timetable tr:nth-child(2){
+    background-color: #8080e6;
+}
+.timetable tr:nth-child(3),.timetable tr:nth-child(4){
+    background-color: #87CEEB;
+}
+.box .err{
+    color: red;
+}

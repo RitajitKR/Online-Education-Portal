@@ -1,0 +1,92 @@
+
+.container {
+    border-radius: 5px;
+	left: 50px;
+	right:50px;
+    background-color: whitesmoke;
+    color : #fff;
+    padding: 20px;
+}
+body
+{
+    background-color: whitesmoke;
+}
+.left {
+    height:560px;
+    width:50px;
+    border:2px solid #00bbff;
+    float:left;
+    top: 10%;
+    position:fixed;
+    background-color: black;
+    color: white;
+    bottom: 10%;
+    }
+.right {
+    height:560px;
+    width:50px;
+    border:2px solid #00bbff;
+    float:right;
+    margin-top:60px;
+    position:fixed;
+    top: 10%;
+    background-color: green;
+    color: white;
+    right: 0;
+    bottom: 10%;
+    }
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+}
+
+.col-la
+{
+     float: right;
+    width: 10%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+html,body {
+    height:100%;
+}
+div.div1 {
+    background-color:red;
+    height:10%;
+    width:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+div.div2 {
+    width:100%;
+    position:relative;
+    background-color:yellow;
+    top:100%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit], input[type=reset], input[type=number], input[type=password] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .left, .right
+    {
+        top:50%;
+    }
+}
